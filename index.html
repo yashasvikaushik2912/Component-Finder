@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Identifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" style="text-decoration: none;">
+            <div class="header-left">
+                <img src="logo.jpg" alt="Component Finder Logo" class="logo">
+                <h1>Component Finder</h1>
+            </div>
+        </a>
+        <div class="search-bar">
+            <input type="text" id="searchBox" placeholder="Search components..." >
+            <button onclick="searchComponent()">🔍</button>
+        </div>
+        <div class="auth-links">
+            <span id="userName" style="display: none;"></span>
+            <button id="logout" style="display: none;">Logout</button>
+            <a href="login.html" id="loginLink">Login</a> |
+            <a href="signup.html" id="signupLink">Signup</a>
+        </div>
+    </header>
+
+    <script src="script.js" defer></script>
+    <script>
+        window.addEventListener("load", () => {
+            const name = localStorage.getItem("name");
+            if (name) {
+                document.getElementById("userName").textContent = `Welcome, ${name}`;
+                document.getElementById("userName").style.display = "inline";
+                document.getElementById("logout").style.display = "inline";
+                document.getElementById("loginLink").style.display = "none";
+                document.getElementById("signupLink").style.display = "none";
+            }
+        });
+
+        window.addEventListener("pageshow", (event) => {
+            if (event.persisted || !localStorage.getItem("name")) {
+                document.getElementById("userName").style.display = "none";
+                document.getElementById("logout").style.display = "none";
+                document.getElementById("loginLink").style.display = "inline";
+                document.getElementById("signupLink").style.display = "inline";
+            }
+        });
+
+        document.getElementById("logout").addEventListener("click", () => {
+            localStorage.removeItem("name");
+            localStorage.removeItem("email");
+            window.location.href = "login.html";
+        });
+    </script>
+
+    <section id="recommended">
+        <h2>Recommended Components</h2>
+        <div class="component-grid" id="componentList" data-user-cards-container></div>
+        <template data-component-template>
+            <div class="component-card">
+                <a href="#" target="_blank" data-url>
+                    <img src="#" alt="" loading="lazy" data-image>
+                </a>
+                <h3 data-name></h3>
+                <p data-description></p>
+            </div>
+        </template>
+    </section>
+
+    <section id="search-result" style="display:none;">
+        <h2>Search Results</h2>
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Component Finder. All rights reserved.</p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+            <p>Email: ge@project.com | Phone: +91 98765 43210</p>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
+        </div>
+    </footer>
+</body>
+</html>

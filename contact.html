@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Component Finder</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #4345d8;
+        }
+        .contact-details {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .contact-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color:#4345d8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .social-links a {
+            margin: 10px;
+            text-decoration: none;
+            color: #4345d8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p><b>If you have any questions, feel free to reach out to us.</b></p>
+
+        <div class="contact-details">
+            <p><b>Email:</b> ge@project.com</p>
+            <p><b>Phone:</b> +91 98765 43210</p>
+            <p><b>Address:</b> 123, Electronics Hub, New Delhi, India</p>
+        </div>
+
+        <h3>Send us a message</h3>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3>Follow us on</h3>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+</body>
+</html>

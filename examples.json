@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Resistor",
+        "description": "Limits current flow in circuits.",
+        "image": "Electronic-Axial-Lead-Resistors-Array.png",
+        "url": "https://en.wikipedia.org/wiki/Resistor"
+    },
+    {
+        "id": 2,
+        "name": "Capacitor",
+        "description": "Stores electrical energy temporarily.",
+        "image": "Capacitors_(7189597135).jpg",
+        "url": "https://en.wikipedia.org/wiki/Capacitor"
+    },
+    {
+        "id": 3,
+        "name": "Inductor",
+        "description": "Stores energy in a magnetic field.",
+        "image": "images.jpeg",
+        "url": "https://en.wikipedia.org/wiki/Inductor"
+    },
+    {
+        "id": 4,
+        "name": "Diode",
+        "description": "Allows current in one direction only.",
+        "image": "diode.jpg",
+        "url": "https://en.wikipedia.org/wiki/Diode"
+    },
+    {
+        "id": 5,
+        "name": "Transistor",
+        "description": "Acts as a switch or amplifier.",
+        "image": "10P5470-40.jpg",
+        "url": "https://en.wikipedia.org/wiki/Transistor"
+    },
+    {
+        "id": 6,
+        "name": "IC Chip",
+        "description": "Integrated circuit for multiple functions.",
+        "image": "images (1).jpeg",
+        "url": "https://en.wikipedia.org/wiki/Integrated_circuit"
+    },
+    {
+        "id": 7,
+        "name": "Operational-Amplifier",
+        "description": "Amplifies weak electrical signals.",
+        "image": "LM741-741-IC-OP-AMP-Operational-Amplifier-IC.jpg",
+        "url": "https://en.wikipedia.org/wiki/Operational_amplifier"
+    },
+    {
+        "id": 8,
+        "name": "LED",
+        "description": "Emits light when current passes.",
+        "image": "history-of-leds.jpg",
+        "url": "https://en.wikipedia.org/wiki/Light-emitting_diode"
+    },
+    {
+        "id": 9,
+        "name": "Sensor",
+        "description": "Detects physical changes.",
+        "image": "IR-sensor-explained.jpg",
+        "url": "https://en.wikipedia.org/wiki/Sensor"
+    },
+    {
+        "id": 10,
+        "name": "Microcontroller",
+        "description": "Programmable small computer.",
+        "image": "microcontroller-1024x683.jpg",
+        "url": "https://en.wikipedia.org/wiki/Microcontroller"
+    }
+]
