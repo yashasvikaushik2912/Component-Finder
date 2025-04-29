@@ -31,9 +31,6 @@ Credits
 - Developed by Yashasvi Kaushik & Disha Thakur, April 2025.
 
 
-License
-[See LICENSE file or specify here if not included.]
-
 Acknowledgments
 - Thanks to Google for assistance in development and design.
 - Component data sourced from Wikipedia and custom examples.
