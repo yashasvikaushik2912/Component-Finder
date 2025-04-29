@@ -9,7 +9,7 @@ Responsive Design: Works on desktop and mobile devices.
 Component Display: Shows recommended components with images and Wikipedia links.
 
 Installation
-1. Clone the repository: git clone https://github.com/yashasvikaushik2912/Component-Finder.git
+1. Clone the repository: "git clone https://github.com/yashasvikaushik2912/Component-Finder.git"
 
 2. Navigate to project folder: cd Component-Finder
 
