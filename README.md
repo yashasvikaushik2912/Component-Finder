@@ -2,6 +2,9 @@ Component Finder
 
 A web application designed to help users identify and search for electronic components. Built as a project for a school assignment, it features a responsive design, user authentication, and a searchable component database.
 
+![image](https://github.com/user-attachments/assets/bdca75e4-dcc7-4862-8fd4-adcfa32a7818)
+
+
 Features:
 Search Functionality: Search for components by name or description with live filtering.
 User Authentication: Register, log in, and log out with email and password.
